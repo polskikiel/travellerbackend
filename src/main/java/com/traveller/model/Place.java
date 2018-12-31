@@ -3,23 +3,23 @@ package com.traveller.model;
 import java.util.List;
 
 public class Place {
-    private Point data;
+    private Point place;
     private List<Point> points;
 
     public Place() {
     }
 
-    public Place(Point data, List<Point> points) {
-        this.data = data;
+    public Place(Point place, List<Point> points) {
+        this.place = place;
         this.points = points;
     }
 
-    public Point getData() {
-        return data;
+    public Point getPlace() {
+        return place;
     }
 
-    public void setData(Point data) {
-        this.data = data;
+    public void setPlace(Point place) {
+        this.place = place;
     }
 
     public List<Point> getPoints() {
