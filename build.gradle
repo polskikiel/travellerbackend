@@ -7,6 +7,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.3'
     }
 }
 
@@ -23,25 +24,9 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'war'
-apply plugin: 'com.google.cloud.tools.appengine'
 
 group = 'com.traveller'
 version = '0.0.1-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-    jcenter()
-}
-
-// Always run unit tests
-appengineDeploy.dependsOn test
-appengineStage.dependsOn test
-
-appengine {  // App Engine tasks configuration
-    deploy {   // deploy configuration
-
-    }
-}
 
 dependencies {
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
