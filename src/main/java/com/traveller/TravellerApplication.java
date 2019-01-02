@@ -24,7 +24,7 @@ public class TravellerApplication {
         points.add(new Point(50.24, 23.472, "jechane afruka", "imgur xd"));
 
         List<Place> places = new ArrayList<>();
-        places.add(new Place(new Point(50, 23, "Park narodowy", "https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3334&q=80"), points));
+        places.add(new Place(new Point(50.22, 23.42, "Park narodowy", "https://images.unsplash.com/photo-1531804055935-76f44d7c3621?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3334&q=80"), points));
 
         List<Point> polsl = new ArrayList<>();
         polsl.add(new Point(50.291159, 18.680220, "Wydział Matematyki Stosowanej", "imgur xd"));
