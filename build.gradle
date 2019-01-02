@@ -7,7 +7,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.3'
+        classpath('com.google.appengine:gradle-appengine-plugin:1.9.3')
     }
 }
 
@@ -21,7 +21,6 @@ repositories {   // repositories for Jar's you access in your code
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'war'
 
